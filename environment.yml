@@ -1,0 +1,5 @@
+name: ecic
+channels:
+  - javascript
+dependencies:
+  - python=3.6   # or 2.7
