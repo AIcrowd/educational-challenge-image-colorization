@@ -16,3 +16,8 @@ download-places365:
 	mkdir data/places365
 	tar -C data/places365 -xvf data/places365.tar
 
+sample-videos:
+	./sample_videos.sh
+
+assemble_images:
+	./assemble_images.sh
