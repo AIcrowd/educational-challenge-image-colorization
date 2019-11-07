@@ -22,5 +22,8 @@ download-hollywood2:
 	wget -O data/holywood2-scenes.tar.gz ftp://ftp.irisa.fr/local/vistas/actions/Hollywood2-scenes.tar.gz
 	tar -C data/ -xf data/holywood2-scenes.tar.gz -v
 
+sample-videos:
+	./sample_videos.sh
 
-
+assemble_images:
+	./assemble_images.sh
