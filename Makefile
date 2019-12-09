@@ -16,6 +16,12 @@ download-places365:
 	mkdir data/places365
 	tar -C data/places365 -xvf data/places365.tar
 
+download-hollywood2:
+	wget -O data/holywood2-actions.tar.gz ftp://ftp.irisa.fr/local/vistas/actions/Hollywood2-actions.tar.gz
+	tar -C data/ -xf data/holywood2-actions.tar.gz -v
+	wget -O data/holywood2-scenes.tar.gz ftp://ftp.irisa.fr/local/vistas/actions/Hollywood2-scenes.tar.gz
+	tar -C data/ -xf data/holywood2-scenes.tar.gz -v
+
 sample-videos:
 	./sample_videos.sh
 
