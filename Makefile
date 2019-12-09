@@ -21,3 +21,12 @@ sample-videos:
 
 assemble_images:
 	./assemble_images.sh
+
+download-tencent-urlx-txt:
+	echo "Downloadin train_urls_from_openimages.txt..."
+	chmod +x gdown.pl
+	./gdown.pl https://drive.google.com/file/d/1__HFVimF5yUwlyEjaUoSmBBfRQKJTYKW/view train_urls_from_openimage.txt
+	echo "Done"
+	echo "Downloading val_urls_from_openimages.txt..."
+	./gdown.pl https://drive.google.com/file/d/1JkTcEEkB1zYI6NtAM-vXpsv7uDZ3glEz/view val_urls_from_openimages.txt
+	echo "Done"
