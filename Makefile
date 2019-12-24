@@ -25,7 +25,7 @@ download-hollywood2:
 sample-videos:
 	./sample_videos.sh
 
-assemble_images:
+assemble-images:
 	./assemble_images.sh
 
 download-tencent-urls-txt:
@@ -40,3 +40,9 @@ download-tencent-urls-txt:
 download-tencent-openimages:
 	chmod +x download_tencent_openimages.sh
 	./download_tencent_openimages.sh
+
+generate-black-white:
+	chmod +x generate_black_and_white.sh
+	./generate_black_and_white.sh
+
+all: download-places365-val download-places365-train download-places365 download-tencent-urls-txt download-tencent-openimages assemble-images
