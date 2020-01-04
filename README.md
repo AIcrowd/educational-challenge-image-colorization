@@ -7,8 +7,17 @@ Repository for the Image Colorization educational challenge
 
 Prerequisites
 
+## Make
+
+In order to run `make` commands, install:
 ```
-conda install -f environment.yml
+sudo apt-get install --reinstall build-essential
+```
+
+## Python Environemnt
+
+```
+conda env create -f environment.yml
 conda activate ecic
 ```
 
