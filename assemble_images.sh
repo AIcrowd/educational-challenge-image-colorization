@@ -1,14 +1,19 @@
-current = $i
+mkdir -p ./train_data/
 
-mkdir -p ./data/train/
-for image in `find . -name '*.jpg' -o -name '*.jpeg'`; do
+# Set seed to random
+RANDOM=640
 
-  filename=$(basename -- "$image")
-  extension="${filename##*.}"
-  filename="${filename%.*}"
-
-  echo $image
-  i=$((i+1))
-
-  cp $image ./data/train/$i.$extension
+echo "Copy and rename jpg files"
+find ./data -iname "*.jpg" | while read line
+do
+	echo $line
+	cp $line "./train_data/$RANDOM-$RANDOM-$RANDOM-$RANDOM-$RANDOM-$RANDOM.jpg";
 done
+
+echo "Copy and rename jpeg files"
+find ./data -iname "*.jpeg" | while read line
+do
+	echo $line
+	cp $line "./train_data/$RANDOM-$RANDOM-$RANDOM-$RANDOM-$RANDOM-$RANDOM.jpeg";
+done
+

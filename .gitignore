@@ -3,3 +3,8 @@ data/**
 .DS_Store
 
 *.txt
+
+*.tar
+*.tar.gz
+test_data/
+train_data/

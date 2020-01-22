@@ -47,6 +47,5 @@ from PIL import Image
 
 def grayscale_image(input_path, output_path):
   img = Image.open(input_path).convert('L')
-  images.append(os.path.join(root, file))
   img.save(output_path)
 ```
